@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url('wifi-image.jpg'); Replace with your background image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity (0.5 in this example) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha (opacity) value 
+} */
+.background-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity (0.5 in this example) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.background-img img {
+    width: 100%; /* 100% width relative to its container */
+    height: 100%; /* 100% height relative to its container */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    filter: blur(5px);
+    opacity: 0.7;
+}
+
+.container {
+    /* text-align: center; */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.container .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container .logo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    margin: 1rem 4rem;
+    border: 5px solid #ffffff;
+
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.container .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .tagline{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.container .tagline h1{
+    font-family: 'Yellowtail', cursive;
+    margin: 1rem 0.5rem;
+}
+.container .tagline h1 i{
+    margin: 0 0 0 2rem;
+}
+.container .terms{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    word-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.container .terms .first-term{
+    display: flex;
+    flex-direction: row;
+}
+
+.container .terms .first-term input{
+    margin: 0 0.5rem;
+    width: 1rem;
+}
+
+.container .connect {
+    display: grid;
+    place-items: center;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    /* background-color: #007bff; */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.container .connect .conn-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 0.5rem 1.1rem;
+    border: none;
+    background: #0069d9;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container .connect .conn-btn:hover{
+    background-color: #0064ce;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
