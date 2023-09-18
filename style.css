@@ -123,14 +123,14 @@ body {
 .container .connect {
     display: grid;
     place-items: center;
-    margin: 1rem 0;
-    padding: 0.5rem 1rem;
+    /* margin: 1rem 0;
+    padding: 0.5rem 1rem; */
     border-radius: 5px;
     /* background-color: #007bff; */
     color: #ffffff;
     font-size: 1rem;
     font-weight: 500;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: all 0.3s ease-in-out;
 }
 
